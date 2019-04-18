@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "288e5ed0-e928-4e13-8ef0-b79f28138a73",
+		"name": "tangelo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test_user\",\n\t\"password\":\"123\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/register/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add/achievement",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test_user\",\n\t\"description\":\"lkjdsahdjkhsa\",\n\t\"user_id\":1\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/add/achievement",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"add",
+						"achievement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch_user_achievements",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/user/achievements",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"achievements"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
