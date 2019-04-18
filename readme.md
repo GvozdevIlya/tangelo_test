@@ -17,7 +17,9 @@ run npm install
 
 # database
 
-import the db.backup.sql
+name:tangelo_project
+
+import the tangelo_project 20-55-25.sql from sql_backup to your mysql
 
 # node
 
